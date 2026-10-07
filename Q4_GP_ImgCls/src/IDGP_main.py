@@ -29,7 +29,7 @@ warnings.filterwarnings(
 
 'FLGP'
 
-dataSetName='../../data/f2/f2'
+dataSetName='../data/f2/f1'
 randomSeeds=2
 
 x_train = np.load(dataSetName + '_train_data.npy')/ 255.0
