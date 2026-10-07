@@ -1,3 +1,6 @@
 anaconda_projects/
 **/.ipynb_checkpoints/
 .DS_Store
+Q4_GP_ImgCls/data/*
+Q4_GP_ImgCls/src/.idea/*
+Q4_GP_ImgCls/src/IDGP/__pycache__/*
