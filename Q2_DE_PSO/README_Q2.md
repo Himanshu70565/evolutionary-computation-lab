@@ -34,7 +34,7 @@ The Differential Evolution notebook also exposes:
 The following summary shows the mean and standard deviation of the final
 fitness values across the configured seeds for both algorithms:
 
-![PSO and Differential Evolution fitness summary](results-q2-summary.png)
+![PSO and Differential Evolution fitness summary](results/results-q2-summary.png)
 
 ## Requirements
 
