@@ -43,7 +43,7 @@ with per-seed final fitness values and a convergence plot. The objective and
 configuration can be changed before rerunning, so the output should be
 interpreted together with the selected function and seed.
 
-**Code:** [`Q1_EP_ES/src/evolutionary_pgm_impl.ipynb`](Q1_EP_ES/src/evolutionary_pgm_impl.ipynb)
+**Code:** [`ep_es/src/evolutionary_pgm_impl.ipynb`](ep_es/src/evolutionary_pgm_impl.ipynb)
 
 ### Evolution Strategies
 
@@ -64,7 +64,7 @@ of `64,622,677.40315349` and a standard deviation of
 `38,859,683.81432349` across the 30 seeds. These values describe the checked-in
 run, not a general performance guarantee.
 
-**Code:** [`Q1_EP_ES/src/evolutionary_stg_impl.ipynb`](Q1_EP_ES/src/evolutionary_stg_impl.ipynb)
+**Code:** [`ep_es/src/evolutionary_stg_impl.ipynb`](ep_es/src/evolutionary_stg_impl.ipynb)
 
 ### Differential Evolution
 
@@ -84,7 +84,7 @@ generation-level best-fitness trajectory.
 reported mean final fitness is `104.04341396347735` and the standard deviation
 is `101.78668483945249`.
 
-**Code:** [`Q2_DE_PSO/src/differential_evolution_impl.ipynb`](Q2_DE_PSO/src/differential_evolution_impl.ipynb)
+**Code:** [`de_pso/src/differential_evolution_impl.ipynb`](de_pso/src/differential_evolution_impl.ipynb)
 
 ### Particle Swarm Optimisation
 
@@ -102,7 +102,7 @@ best-fitness convergence trajectory are reported.
 `0.01787577137236708` and a standard deviation of
 `0.01719203705800012`.
 
-**Code:** [`Q2_DE_PSO/src/pso_implementation.ipynb`](Q2_DE_PSO/src/pso_implementation.ipynb)
+**Code:** [`de_pso/src/pso_implementation.ipynb`](de_pso/src/pso_implementation.ipynb)
 
 ### Estimation of Distribution Algorithms
 
@@ -125,8 +125,8 @@ generation. The documented reference optimum values are 295 for `10_269`,
 9765, 9753, 9765, 9765, and 9767 across the five runs, with mean fitness
 `9763.000000` and standard deviation `5.656854`.
 
-**Code and data:** [`Q3_EDA/src/knapsack_eda_impl.ipynb`](Q3_EDA/src/knapsack_eda_impl.ipynb) ·
-[`Q3_EDA/data/`](Q3_EDA/data/)
+**Code and data:** [`eda/src/knapsack_eda_impl.ipynb`](eda/src/knapsack_eda_impl.ipynb) ·
+[`eda/data/`](eda/data/)
 
 ### Genetic Programming for Image Classification
 
@@ -180,10 +180,10 @@ then evaluated on the held-out test data. Training features are Min-Max
 normalised before SVM fitting, and the generated pattern files preserve the
 feature columns and labels.
 
-**Code and data:** [`Q4_GP_ImgCls/src/IDGP_main.py`](Q4_GP_ImgCls/src/IDGP_main.py) ·
-[`Q4_GP_ImgCls/src/feature_function.py`](Q4_GP_ImgCls/src/feature_function.py) ·
-[`Q4_GP_ImgCls/src/feature_extractors.py`](Q4_GP_ImgCls/src/feature_extractors.py) ·
-[`Q4_GP_ImgCls/src/classification_4.2.ipynb`](Q4_GP_ImgCls/src/classification_4.2.ipynb)
+**Code and data:** [`gp_image_classification/src/IDGP_main.py`](gp_image_classification/src/IDGP_main.py) ·
+[`gp_image_classification/src/feature_function.py`](gp_image_classification/src/feature_function.py) ·
+[`gp_image_classification/src/feature_extractors.py`](gp_image_classification/src/feature_extractors.py) ·
+[`gp_image_classification/src/classification_4.2.ipynb`](gp_image_classification/src/classification_4.2.ipynb)
 
 ## Results
 
@@ -219,7 +219,7 @@ GP tree expression, so no single “best extractor” is reproduced here by name
 
 ### Convergence across EP and ES runs
 
-![EP and ES fitness summary](Q1_EP_ES/results/fitness-summary.png)
+![EP and ES fitness summary](ep_es/results/fitness-summary.png)
 
 This summary compares the fitness progression produced by the EP and adaptive
 ES notebooks. It is useful for inspecting convergence speed and the difference
@@ -227,24 +227,24 @@ between smooth progress and run-to-run variability.
 
 ### DE and PSO comparison
 
-![DE and PSO fitness summary](Q2_DE_PSO/results/results-q2-summary.png)
+![DE and PSO fitness summary](de_pso/results/results-q2-summary.png)
 
 The plot provides a compact comparison of the DE and PSO optimisation
 experiments and their recorded fitness behaviour.
 
 ### UMDA on knapsack instances
 
-![UMDA on 10-item knapsack](Q3_EDA/results/umda-10-269.png)
+![UMDA on 10-item knapsack](eda/results/umda-10-269.png)
 
 The curve shows how average population fitness changes over generations for the
 `10_269` instance.
 
-![UMDA on 23-item knapsack](Q3_EDA/results/umda-23-10000.png)
+![UMDA on 23-item knapsack](eda/results/umda-23-10000.png)
 
 This plot corresponds to the larger `23_10000` instance and complements the
 five-seed summary reported above.
 
-![UMDA on 100-item knapsack](Q3_EDA/results/umda-100-995.png)
+![UMDA on 100-item knapsack](eda/results/umda-100-995.png)
 
 The `100_995` plot illustrates UMDA behaviour on the largest included
 knapsack instance.
@@ -322,17 +322,17 @@ jupyter notebook
 
 Open the relevant notebook and run its cells from top to bottom:
 
-- [`Q1_EP_ES/src/evolutionary_pgm_impl.ipynb`](Q1_EP_ES/src/evolutionary_pgm_impl.ipynb)
-- [`Q1_EP_ES/src/evolutionary_stg_impl.ipynb`](Q1_EP_ES/src/evolutionary_stg_impl.ipynb)
-- [`Q2_DE_PSO/src/differential_evolution_impl.ipynb`](Q2_DE_PSO/src/differential_evolution_impl.ipynb)
-- [`Q2_DE_PSO/src/pso_implementation.ipynb`](Q2_DE_PSO/src/pso_implementation.ipynb)
-- [`Q3_EDA/src/knapsack_eda_impl.ipynb`](Q3_EDA/src/knapsack_eda_impl.ipynb)
+- [`ep_es/src/evolutionary_pgm_impl.ipynb`](ep_es/src/evolutionary_pgm_impl.ipynb)
+- [`ep_es/src/evolutionary_stg_impl.ipynb`](ep_es/src/evolutionary_stg_impl.ipynb)
+- [`de_pso/src/differential_evolution_impl.ipynb`](de_pso/src/differential_evolution_impl.ipynb)
+- [`de_pso/src/pso_implementation.ipynb`](de_pso/src/pso_implementation.ipynb)
+- [`eda/src/knapsack_eda_impl.ipynb`](eda/src/knapsack_eda_impl.ipynb)
 
 The notebooks use relative paths, so launch them from their respective `src`
 directories when a data or result path fails to resolve:
 
 ```bash
-cd Q3_EDA/src
+cd eda/src
 jupyter notebook knapsack_eda_impl.ipynb
 ```
 
@@ -342,38 +342,38 @@ Run the GP program from its source directory so its relative dataset paths
 resolve:
 
 ```bash
-cd Q4_GP_ImgCls/src
+cd gp_image_classification/src
 python IDGP_main.py
 ```
 
 The program evolves a feature extractor, evaluates the best individual on the
 test set, and writes generated pattern CSV files alongside the dataset. To
 evaluate the committed pattern files directly with the linear SVM workflow,
-open [`Q4_GP_ImgCls/src/classification_4.2.ipynb`](Q4_GP_ImgCls/src/classification_4.2.ipynb)
-and run it from `Q4_GP_ImgCls/src`.
+open [`gp_image_classification/src/classification_4.2.ipynb`](gp_image_classification/src/classification_4.2.ipynb)
+and run it from `gp_image_classification/src`.
 
 ## Repository Structure
 
 ```text
 .
-├── Q1_EP_ES/
+├── ep_es/
 │   ├── src/
 │   │   ├── evolutionary_pgm_impl.ipynb
 │   │   └── evolutionary_stg_impl.ipynb
 │   └── results/fitness-summary.png
-├── Q2_DE_PSO/
+├── de_pso/
 │   ├── src/
 │   │   ├── differential_evolution_impl.ipynb
 │   │   └── pso_implementation.ipynb
 │   └── results/results-q2-summary.png
-├── Q3_EDA/
+├── eda/
 │   ├── data/
 │   │   ├── 10_269
 │   │   ├── 23_10000
 │   │   └── 100_995
 │   ├── results/
 │   └── src/knapsack_eda_impl.ipynb
-├── Q4_GP_ImgCls/
+├── gp_image_classification/
 │   ├── data/
 │   │   ├── f1/
 │   │   └── f2/
@@ -386,16 +386,5 @@ and run it from `Q4_GP_ImgCls/src`.
 │   │   ├── gp_restrict.py
 │   │   ├── sift_features.py
 │   │   └── strongGPDataType.py
-│   └── README_Q4.md
 └── README.md
 ```
-
-## Further Reading Within the Repository
-
-Each experiment directory retains a focused README with local usage notes and
-links to its implementation:
-
-- [`Q1_EP_ES/README_Q1.md`](Q1_EP_ES/README_Q1.md)
-- [`Q2_DE_PSO/README_Q2.md`](Q2_DE_PSO/README_Q2.md)
-- [`Q3_EDA/README_Q3.md`](Q3_EDA/README_Q3.md)
-- [`Q4_GP_ImgCls/README_Q4.md`](Q4_GP_ImgCls/README_Q4.md)
